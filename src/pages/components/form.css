@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0
+}
+.form-layout {
+  min-height: 80vh;
+}
+.search {
+  border-radius: 15px;
+  padding: 10px;
+  width: 300px;
+}

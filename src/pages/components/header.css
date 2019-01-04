@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  background-image: url(../../../images/background.jpg);
+  min-height: 100vh;
+}
+.logo-pokedex {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.navigate {
+  height: 50px;
+}
+.navigate ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.navigate li {
+  display: flex;
+  list-style: none;
+  padding: 0 1px;
+}
+.navigate a {
+  background-color:rgba(255, 255, 255 ,.8);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  align-items: center;
+  font-family:'Segoe UI';
+  font-size: 16px;
+  height: 50px;
+  display: flex;
+  padding: 0 35px;
+}
+.nav-list li:first-child a{
+  border-radius: 10px 0 0 0;
+}
+.nav-list li:last-child a{
+  border-radius: 0 10px 0 0;
+}
+.nav-list .is-selected:active{
+  box-shadow: 0px -4px 0px 0px darkred inset;
+}

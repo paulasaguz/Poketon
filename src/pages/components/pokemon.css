@@ -1,0 +1,63 @@
+.pokemon-container {
+  background-color:rgba(255, 255, 255 ,.8);
+  border-radius: 15px;
+  font-family: 'arial';
+  max-width: 450px;
+  margin: 15px auto;
+  padding: 15px;
+}
+.poke-name {
+  text-align: center;
+  font-size: 26px;
+}
+.poke-number {
+  color:grey
+}
+.description-container {
+  display: flex;
+}
+.description {
+  list-style: none;
+}
+.description h4 {
+  margin: 10px 0
+}
+.description p {
+  margin: 5px 0
+}
+.poke-weight {
+  font-weight: lighter
+}
+.types {
+  padding: 6px 10px;
+  border-radius: 5px;
+  color:white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 5px 5px 5px 0;
+}
+.ability {
+  padding: 6px 10px;
+  background-color: purple;
+  border-radius: 5px;
+  margin: 5px 5px 0 0;
+  color:white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 12px
+}
+.buttons {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.buttons a {
+  background-color: rgba(78, 78, 75, 0.3);
+  border-radius: 15px;
+  text-decoration: none;
+  color:white;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
