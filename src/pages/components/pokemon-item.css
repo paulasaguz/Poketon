@@ -1,0 +1,7 @@
+.pokemonItem {
+  list-style:none;
+  background-color:rgba(255, 255, 255 ,.8);
+  margin: 5px;
+  padding: 10px;
+  font-family: 'arial';
+}

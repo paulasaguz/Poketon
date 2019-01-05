@@ -4,25 +4,22 @@ import API from '../../library/api';
 
 class PageList extends Component {
   state = { 
-  pokemonList : {}
+    pokemonList : []
   }
   componentDidMount(){
     this.getList()
   }
   getList(){
     API.getPokemonList()
-    .then((pokemonList) => {
-      console.log(pokemonList)
+    .then(({results}) => {
       this.setState({
-        pokemonList
+        pokemonList : results
       })
     })
   }
   render() { 
     return ( 
-      <div className="pokelist">
-        <PokemonList pokemonList={this.state.pokemonList}/>
-      </div>
+      <PokemonList pokemonList={this.state.pokemonList}/>
     );
   }
 }

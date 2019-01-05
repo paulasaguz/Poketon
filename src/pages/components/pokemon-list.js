@@ -1,8 +1,16 @@
 import React from 'react';
+import PokemonItem from './pokemon-item'
+import './pokemon-list.css'
 
 function PokemonList({pokemonList}){
   return (
-  <h1>{pokemonList.count}</h1>
+  <div className="pokemonList">
+    {
+      pokemonList.map((item, index) =>(
+        <PokemonItem key={index}{...item}/>
+      ))
+    }
+  </div>
   )
 }
 

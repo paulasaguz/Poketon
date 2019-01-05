@@ -1,10 +1,9 @@
 class API {
   getPokemonList() {
-    return fetch(`https://pokeapi.co/api/v2/pokemon/`)
-    .then(function (response) {
-      return response.json()
+    return fetch(`https://pokeapi.co/api/v2/pokemon/?limit=100`)
+    .then(function (res) {
+      return res.json()
       .then((pokemonList)=>{
-        console.log(pokemonList)
         return pokemonList;
       })
     })
