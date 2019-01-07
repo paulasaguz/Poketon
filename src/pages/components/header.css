@@ -2,6 +2,8 @@ body {
   margin: 0;
   background-image: url(../../../images/background.jpg);
   max-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .logo-pokedex {
   padding-top: 20px;
