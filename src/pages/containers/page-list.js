@@ -35,7 +35,6 @@ class PageList extends Component {
 }
 
 function mapStateToProps(state){
-  console.log('oli')
   return {
     favoriteList : state.favorites
   }

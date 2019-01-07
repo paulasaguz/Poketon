@@ -1,9 +1,14 @@
 function favoritesReducer (state, action){
   switch(action.type){
     case 'ADD_FAV' : {
-      const newState = state
-      newState.favorites.push(action.payload.name)
-      return newState
+      const repetido = state.favorites.indexOf(action.payload.name)
+      console.log(repetido)
+
+      if(repetido >= 0){
+        return state
+      }
+      const newState = {...state, favorites : [...state.favorites, action.payload.name]}
+        return newState
     }
     default : {
       return state

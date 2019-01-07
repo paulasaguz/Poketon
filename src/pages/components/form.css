@@ -7,7 +7,12 @@ form {
   min-height: 80vh;
 }
 .search {
+  border:1px solid gainsboro;
   border-radius: 15px;
   padding: 10px;
   width: 300px;
+}
+input:focus {
+  box-shadow: 0 0 0 0.15em rgb(106, 176, 245);
+  outline: none;
 }

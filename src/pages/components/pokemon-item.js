@@ -3,15 +3,24 @@ import Star from '../../icons/components/star'
 import './pokemon-item.css'
 
 function PokemonItem ({favoriteList, name, handleFavClick}){
-  const indice = favoriteList.indexOf(name)
+
+  let indice = favoriteList.indexOf(name)
   let color = ''
   if(indice >= 0){
     color = 'blue'
   }
-  console.log(name)
-  return(
+
+  return (
     <div className="pokemonItem">
-      <li onClick={()=>{handleFavClick(name)}}>{name} <Star color={color} size={24} viewBox="0 0 24 24"/></li>
+      <li 
+        onClick={()=>{handleFavClick(name)}}>
+        {name} 
+        <Star 
+          color={color}  
+          size={24} 
+          viewBox="0 0 24 24"
+        />
+      </li>
     </div>
   )
 }

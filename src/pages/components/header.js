@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../../../images/logo-pokedex.png'
 import './header.css'
 
@@ -7,7 +7,7 @@ class Header extends Component {
   state = {  }
   render() { 
     return ( 
-    <header>
+    <header className="header" >
       <div className="logo-pokedex">
         <img src={logo} alt="logo-pokedex" width="200" height="80"/>
       </div>
@@ -15,16 +15,16 @@ class Header extends Component {
         <nav className="navigate">
           <ul className="nav-list">
             <li>
-              <Link to="/" className="nav-item is-selected">Buscar</Link>
+              <NavLink exact to="/" className="nav-item" activeClassName="is-selected">Buscar</NavLink>
             </li>
             <li>
-              <Link to="/pokemon/25" className="nav-item is-selected">Pikachu</Link>
+              <NavLink to="/pokemon/25" className="nav-item" activeClassName="is-selected">Pikachu</NavLink>
             </li>
             <li>
-              <Link to="/lista" className="nav-item is-selected">Lista</Link>
+              <NavLink to="/lista" className="nav-item" activeClassName="is-selected">Lista</NavLink>
             </li>
             <li>
-              <Link to="/favoritos" className="nav-item is-selected">Favoritos</Link>
+              <NavLink to="/favoritos" className="nav-item" activeClassName="is-selected">Favoritos</NavLink>
             </li>
           </ul>
         </nav>

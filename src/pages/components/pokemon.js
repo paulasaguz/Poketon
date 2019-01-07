@@ -16,8 +16,12 @@ function Pokemon ({pokemon}){
   return (
     <div className="pokemon-container">
       <div className="buttons">
-        <Link to={`/pokemon/${pokemon.id - 1}`}><Left size={25} viewBox="0 0 24 24" /></Link>
-        <Link to={`/pokemon/${pokemon.id + 1}`}><Right size={25} viewBox="0 0 24 24"/></Link>
+        <Link to={`/pokemon/${pokemon.id - 1}`}>
+          <Left size={25} viewBox="0 0 24 24" />
+        </Link>
+        <Link to={`/pokemon/${pokemon.id + 1}`}>
+          <Right size={25} viewBox="0 0 24 24"/>
+        </Link>
       </div>
       <h1 className="poke-name">{pokemon.name} <span className="poke-number"> No. {pokemon.id}</span></h1>
       <div className="description-container">

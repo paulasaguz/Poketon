@@ -7,7 +7,11 @@ function PokemonList({favoriteList, pokemonList, handleFavClick}){
   <div className="pokemonList">
     {
       pokemonList.map((item, index) =>(
-        <PokemonItem favoriteList={favoriteList} handleFavClick={handleFavClick} key={index}{...item}/>
+        <PokemonItem 
+          favoriteList={favoriteList} 
+          handleFavClick={handleFavClick} 
+          key={index}{...item}
+        />
       ))
     }
   </div>

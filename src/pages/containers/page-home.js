@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component} from 'react';
 import Form from '../components/form';
 
 class Home extends Component {
@@ -13,9 +13,7 @@ class Home extends Component {
   }
   render() { 
     return ( 
-    <Fragment>
       <Form handleSubmit={this.handleSubmit} setRef={this.setRef} />
-    </Fragment>
     );
   }
 }
