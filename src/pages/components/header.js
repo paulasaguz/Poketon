@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logo from '../../../dist/images/logo-pokedex.6f1fd44625c52ccd693ca4e39b23cc9f.png'
+import logo from '../../../images/logo-pokedex.png'
 import './header.css'
 
 class Header extends Component {
