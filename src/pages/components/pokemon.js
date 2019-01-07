@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom'
 import './pokemon.css'
 
 function Pokemon ({pokemon}){
-  console.log(pokemon)
   if (!pokemon.name){
     return null
   }

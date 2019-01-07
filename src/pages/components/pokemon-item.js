@@ -2,7 +2,7 @@ import React from 'react'
 import Star from '../../icons/components/star'
 import './pokemon-item.css'
 
-function PokemonItem ({favoriteList, name, handleFavClick}){
+function PokemonItem ({favoriteList, name, url, handleFavClick}){
 
   let indice = favoriteList.indexOf(name)
   let color = ''
@@ -13,7 +13,7 @@ function PokemonItem ({favoriteList, name, handleFavClick}){
   return (
     <div className="pokemonItem">
       <li 
-        onClick={()=>{handleFavClick(name)}}>
+        onClick={()=>{handleFavClick(name, url)}}>
         {name} 
         <Star 
           color={color}  

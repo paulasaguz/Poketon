@@ -5,6 +5,7 @@
   margin-bottom: 5px;
   list-style:none;
   width: 100%;
+  animation: .5s list;
 }
 .pokemonItem li {
   display: flex;
@@ -14,4 +15,12 @@
 }
 .pokemonItem:hover{
   background-color: lightblue;
+}
+@keyframes list {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

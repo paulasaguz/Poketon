@@ -27,9 +27,12 @@ class PageList extends Component {
     })
   }
   render() {
-    console.log('se renderizo')
     return (
-      <PokemonList favoriteList={this.props.favoriteList} handleFavClick={this.handleFavoriteCLick} pokemonList={this.state.pokemonList}/>
+      <PokemonList 
+        favoriteList={this.props.favoriteList} 
+        handleFavClick={this.handleFavoriteCLick} 
+        pokemonList={this.state.pokemonList}
+      />
     );
   }
 }
