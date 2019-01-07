@@ -1,10 +1,17 @@
-import React from 'react';
-import './pokemon-item.css';
+import React from 'react'
+import Star from '../../icons/components/star'
+import './pokemon-item.css'
 
-function PokemonItem (props){
+function PokemonItem ({favoriteList, name, handleFavClick}){
+  const indice = favoriteList.indexOf(name)
+  let color = ''
+  if(indice >= 0){
+    color = 'blue'
+  }
+  console.log(name)
   return(
     <div className="pokemonItem">
-      <li>{props.name}</li>
+      <li onClick={()=>{handleFavClick(name)}}>{name} <Star color={color} size={24} viewBox="0 0 24 24"/></li>
     </div>
   )
 }

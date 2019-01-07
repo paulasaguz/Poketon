@@ -1,8 +1,4 @@
-import React from 'react';
-
-let styleLanguage = {
-  backgroundColor :''
-}
+import React from 'react'
 
 const types = {
   'normal' : '#BCBCAF',
@@ -33,4 +29,5 @@ function PokeType(props){
   <span className="types" style={colorb}>{props.type.name}</span>
   )
 }
+
 export default PokeType

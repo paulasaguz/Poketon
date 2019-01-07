@@ -1,0 +1,20 @@
+.favoritesList {
+  max-width: 600px;
+  margin: 20px auto;
+  list-style: none;
+}
+.favoritesList li {
+  background-color : rgba(255, 255, 255 ,.8);
+  font-family: 'arial';
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.empty {
+  display: flex;
+  justify-content: center;
+  font-family: 'arial';
+  font-size: 20px;
+  font-weight: bold;
+}

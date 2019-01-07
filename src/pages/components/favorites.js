@@ -1,8 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react'
+import './favorites.css'
 
-function Favorites (){
-  return(
-  <h1>Hola soy tu Pokemon favorito</h1>
+function Favorites ({listFavorites}){
+  if(!listFavorites){
+    return(
+      <p className="empty">Aún no tienes favoritos</p>
+    )
+  }
+  return( 
+    <div className="favoritesList">
+      {
+        listFavorites.map(favorite=>
+        <li key={favorite}> {favorite} </li>)
+      }
+    </div>
   )
 }
 

@@ -1,7 +1,14 @@
 .pokemonItem {
-  list-style:none;
   background-color:rgba(255, 255, 255 ,.8);
-  margin: 5px;
-  padding: 10px;
   font-family: 'arial';
+  border-radius: 10px;
+  margin-bottom: 5px;
+  list-style:none;
+  width: 100%;
+}
+.pokemonItem li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }

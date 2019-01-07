@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 import PokemonItem from './pokemon-item'
 import './pokemon-list.css'
 
-function PokemonList({pokemonList}){
+function PokemonList({favoriteList, pokemonList, handleFavClick}){
   return (
   <div className="pokemonList">
     {
       pokemonList.map((item, index) =>(
-        <PokemonItem key={index}{...item}/>
+        <PokemonItem favoriteList={favoriteList} handleFavClick={handleFavClick} key={index}{...item}/>
       ))
     }
   </div>

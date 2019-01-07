@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../../images/logo-pokedex.png';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import logo from '../../../images/logo-pokedex.png'
 import './header.css'
 
 class Header extends Component {

@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import PokemonList from '../components/pokemon-list';
-import API from '../../library/api';
+import React, { Component } from 'react'
+import PokemonList from '../components/pokemon-list'
+import API from '../../library/api'
+import { connect } from 'react-redux'
 
 class PageList extends Component {
   state = { 
@@ -17,11 +18,26 @@ class PageList extends Component {
       })
     })
   }
-  render() { 
-    return ( 
-      <PokemonList pokemonList={this.state.pokemonList}/>
+  handleFavoriteCLick = (name) => {
+    this.props.dispatch({
+      type : 'ADD_FAV',
+      payload : {
+        name
+      }
+    })
+  }
+  render() {
+    console.log('se renderizo')
+    return (
+      <PokemonList favoriteList={this.props.favoriteList} handleFavClick={this.handleFavoriteCLick} pokemonList={this.state.pokemonList}/>
     );
   }
 }
 
-export default PageList;
+function mapStateToProps(state){
+  console.log('oli')
+  return {
+    favoriteList : state.favorites
+  }
+}
+export default connect(mapStateToProps)(PageList) ;
