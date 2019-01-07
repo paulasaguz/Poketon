@@ -5,6 +5,7 @@ module.exports = {
     "app": path.resolve(__dirname, 'src/entires/app.js'),
   },
   output: {
+    publicPath: "/dist/",
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js'
   },
